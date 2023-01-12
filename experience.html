@@ -40,10 +40,10 @@
                     <a href="#intro" class="nav-link">About me</a>
                 </li> -->
                 <li class="nav-item">
-                    <a href= #projects style = "color:white" class="nav-link">Projects</a>
+                    <a href="index.html" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href= #experience style = "color:white" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a target="_blank" href="https://whuang288.gitbook.io/notes/" class="nav-link">Notes</a>
@@ -86,7 +86,7 @@
     <!-- Header End -->
     
     <!-- Experience Start -->
-    <!-- <div class="container-fluid pt-5" id="experience">
+    <div class="container-fluid pt-5" id="experience">
         <div class="container">
             <div id="collapsible1" class="row align-items-top" style = "color: black;">
                 <div class="col-lg-6">
@@ -162,162 +162,8 @@
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Experience End -->
-
-    <!-- Projects Start -->
-    <div class="container-fluid pd-5" id="projects">
-        <!-- <div class="position-relative d-flex align-items-center justify-content-rleft pt-5" style = "height: 100px">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects  </h1>
-            <h1 class="position-absolute text-uppercase text-primary">Projects</h1> 
-        </div> -->
-
-        <div id = "collapsible" class="container">
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/sign_language.png" width="450" />
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/sign_language"> Sign Language Translation</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            We implemented a convolutional neural network in pytorch to recognize ASL characters, and achieved real-time translation
-                            with MediaPipe and OpenCV. Check out <a href="https://whuang288alex.github.io/sign_language/"> our website</a> for a more detailed introduction.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/refocus.gif" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/Refocus">Refocus</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is an app that allow the user to refocus an image. The trick here is that it uses a stack of image with different focus as input instead of just one image. When a user chooses a scene point to be “refocused”, the app picks the “best focused” image from the focal stack, and displays the image.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/output_video.gif" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/object_tracking">Object Tracking</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a vision system that is able to detect the movement of an object. We first determine an area of interest in image1, and search for the corresponding area in image2 by using template matching.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/image_stitcher.png" width="450" />
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/image_stitcher">Image Stitcher</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            This is an app that stitches a collection of photos into one. We accomplished ths by first getting some interest points 
-                            using the SIFT algorithm, and then using RANSAC to get rid of the outliers. Finally, we calculated the homogrphy between 
-                            the images based on those SIFT matches, and used backward warping to stitch the images together.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/P-Scanner.png" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/P-Scanner_public">P-Scanner</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a multifeature device that is used in a warehouse scenario. It includes features such as but not limited to barcode scanning, route planning, navigating, and picture capturing. On top of the above mentioned core features, the biggest attraction of our device is that the user interface can be projected onto the floor, which allows the users to continue their work without occupying their hands.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/path_tracer.png" width="450"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/PathTracer">Path Tracer APK</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a project I developed as an Electrical Engineering intern at Zebra Technologies.The main goal of this app is to assist hardware engineers in testing the touch screens of Zebra Touch Computer Series. It is designed to detect ghost touch and line-breaks during the testing process.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/Minirel.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/Minirel">Minirel</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a group project in which we built a working single-user DBMS that can execute certain SQL queries. It includes 5 layers: the disk I/O layer (UNIX file system), buffer manager layer(using the clock algorithm), heap file layer, query processing layer, and the user interface.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/uwb.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/mock_uwb">UWB Simulator</a></h3>
-                        <br>
-                        <p>
-                            This project simulates the "three-point" method that is widely used to locate a tag's location. 
-                            This project aims to develop an algorithm that finds a best estimated point even if the measured distances lead to an obscure result.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
-
-             <!-- <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/edge_detection.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/edge_detection">Edge Detection</a></h3>
-                        <br>
-                        <p>
-                            Implemented from scratch an application that is able to detect the edges in a picture by using the standard hough transform method.
-                        </p>
-                    </div>
-                </div>
-            </div> --> 
-        </div>
     </div>
-    <!-- Projects End -->
+    <!-- Experience End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-3 px-sm-3 px-md-5">
