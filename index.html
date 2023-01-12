@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Alex Huang</title>
+    <title>Alex (Wei-Chun) Huang</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/icon.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,12 +37,16 @@
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Alex Huang</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Software Engineer, Machine Learning Researcher, Poker Player ?</div>
+                    <p style="color:white; max-width:545px" align="justify" >
+                        <br>
+                        My name is Alex (Wei-Chun) Huang, and I am a junior studying Computer Science at University of Wisconsin-Madison. I am broadly interested in Machine Learning and Computer Vision.
+                        I am especialy interested in Deep Learning methods for Video Understanding. During my free time, you can find me playing poker and Mahjong with my friends.
+                    </p>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="https://github.com/whuang288alex" class="btn btn-outline-light mr-5">GitHub</a>
                         <a href="https://www.linkedin.com/in/alex-huang-a1a8a91b9/" class="btn btn-outline-light mr-5">LinkedIn</a>
                         <a target="_blank" href="Resume.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+                        <i class="fas fa-chevron-down" data-toggle="collapse" data-target="#collapsible1" style="color:white;"></i>
                     </div>
                 </div>
             </div>
@@ -50,14 +54,11 @@
     </div>
     <!-- Header End -->
 
+    
     <!-- Experience Start -->
     <div class="container-fluid" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-top">
+            <div id="collapsible1" class="row align-items-top collapse in">
                 <div class="col-lg-6">
                     <h3 class="mb-4">Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
@@ -134,13 +135,14 @@
     </div>
     <!-- Experience End -->
 
-    <!-- Portfolio Start -->
-    <div class="container-fluid" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Portfolio</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
-            </div>
+    <!-- Projects Start -->
+    <div class="container-fluid" id="projects">
+        <!-- <div class="position-relative d-flex align-items-center justify-content-rleft pt-5" style = "height: 100px">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects  </h1>
+            <h1 class="position-absolute text-uppercase text-primary">Projects</h1> 
+        </div> -->
+
+        <div id = "collapsible" class="container">
 
             <div class="container pt-5">
                 <div class="row align-items-center">
@@ -153,6 +155,36 @@
                         <p> 
                             We implemented a convolutional neural network in pytorch to recognize ASL characters, and achieved real-time translation
                             with MediaPipe and OpenCV. Check out <a href="https://whuang288alex.github.io/sign_language/"> our website</a> for a more detailed introduction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <img src="img/refocus.gif" width="450" height="300"/>
+                    </div>
+                    <div class="col-md">
+                        <h3> <a href="https://github.com/whuang288alex/Refocus">Refocus</a></h3>
+                        <br>
+                        <p>
+                            This is an app that allow the user to refocus an image. The trick here is that it uses a stack of image with different focus as input instead of just one image. When a user chooses a scene point to be “refocused”, the app picks the “best focused” image from the focal stack, and displays the image.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <img src="img/output_video.gif" width="450" height="300"/>
+                    </div>
+                    <div class="col-md">
+                        <h3> <a href="https://github.com/whuang288alex/object_tracking">Object Tracking</a></h3>
+                        <br>
+                        <p>
+                            This is a vision system that is able to detect the movement of an object. We first determine an area of interest in image1, and search for the corresponding area in image2 by using template matching.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -205,6 +237,22 @@
                 </div>
             </div>
 
+            <!-- <div class="container pt-5">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <img src="img/edge_detection.png" width="450" height="300"/>
+                        
+                    </div>
+                    <div class="col-md">
+                        <h3> <a href="https://github.com/whuang288alex/edge_detection">Edge Detection</a></h3>
+                        <br>
+                        <p>
+                            Implemented from scratch an application that is able to detect the edges in a picture by using the standard hough transform method.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            
             <div class="container pt-5">
                 <div class="row align-items-center">
                     <div class="col-md">
@@ -221,23 +269,7 @@
                 </div>
             </div>
 
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/edge_detection.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/edge_detection">Edge Detection</a></h3>
-                        <br>
-                        <p>
-                            Implemented from scratch an application that is able to detect the edges in a picture by using the standard hough transform method.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
+            <!-- <div class="container pt-5">
                 <div class="row align-items-center">
                     <div class="col-md">
                         <img src="img/uwb.png" width="450" height="300"/>
@@ -247,21 +279,22 @@
                         <h3> <a href="https://github.com/whuang288alex/mock_uwb">UWB Simulator</a></h3>
                         <br>
                         <p>
-                            This project simulates the "three-point" method that is widely used to locate a tag's location. In theory, by measuring distances between tags and anchor points, we can obtain the location of the tag given the location of the anchor points. However, in reality, measurment errors might result in three circles having no intersection or many intersections. Therefore, this project aims to develop an algorithm that finds a best estimated point even if the measured distances lead to an obscure result.
+                            This project simulates the "three-point" method that is widely used to locate a tag's location. 
+                            This project aims to develop an algorithm that finds a best estimated point even if the measured distances lead to an obscure result.
                         </p>
                     </div>
                 </div>
-            </div>
-        
+            </div> -->
+            
         </div>
     </div>
     <!-- Portfolio End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <!-- <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center">
         </div>
-    </div>
+    </div> -->
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
