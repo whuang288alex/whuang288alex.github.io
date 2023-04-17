@@ -2,294 +2,255 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Alex Huang</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <title>Alex Huang</title>
+  <link rel="icon" type="image/x-icon" href="./assets/Icon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Alex Huang, Alex Huang, 黃偉鈞, Software Developer, Software Engineering, UW-Madison, Machine Learning Engineer, Computer Vision Engineer">
 
-    <!-- Favicon -->
-    <link href="img/icon.png" rel="icon">
+  <meta property="og:title" content="Alex Huang - Computer Science and Software Development">
+  <meta property="og:description" content="Learn more about me and my projects.">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15235854-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-15235854-2');
+  </script>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 
-<!-- Navbar start -->
-<nav class="navbar navbar-expand bg-primary navbar-dark fixed-top">
-    <div class="container">
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href= #projects style = "color:white" class="nav-link">Projects</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a href="./experience.html" class="nav-link">experience</a>
-                </li> -->
-                <li class="nav-item">
-                    <a target="_blank" href="https://whuang288.gitbook.io/notes/" class="nav-link">Notes</a>
-                </li>
-            </ul>
-        </div> 
-    </div>
-</nav>
-<!-- Navbar end -->
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body>
   
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center pt-5" id="intro" style="min-height: 60vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Alex Huang</h1>
-                    <p style="color:white; max-width:90%"   align= "justify" >
-                        <br>
-                        My name is Alex Huang, and I am a junior studying Computer Science at the University of Wisconsin-Madison. I am broadly interested in Machine Learning and Computer Vision.
-                        I am especially interested in Deep Learning methods for Video Understanding and Vision-Language Learning.  
-                        During my free time, I play poker, <a style="color: white" href="https://en.wikipedia.org/wiki/Mahjong"> Mahjong</a>, and, occasionally, basketball.
-                    </p>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://github.com/whuang288alex" class="btn btn-outline-light mr-5">GitHub</a>
-                        <a href="https://www.linkedin.com/in/alex-huang-a1a8a91b9/" class="btn btn-outline-light mr-5">LinkedIn</a>
-                        <a target="_blank" href="Resume.pdf" class="btn btn-outline-light mr-5">Résumé</a>
-                    </div>
-                </div>
-            </div>
+   <!-- Navbar -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-left affix">
+        <div class="affix profile">
+          <div class="portrait">
+            <img alt="Alex Huang" src="./assets/Profile.jpg">
+          </div>
+          <h4 class="name">Alex Huang</h4>
+          <div class="navbar-default" id="navbar">
+            <ul class="nav flex-column nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#section-abouts">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <!-- Header End -->
-    
-    <!-- Projects Start -->
-    <div class="container-fluid pd-5 pb-5" id="projects">
-        <div id = "collapsible" class="container">
-            
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/vision_semantics.png" width="450" height="250"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/Knowledge-and-Concepts-Lab/vision_robustness"> Vision Semantics</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            This project attempts to build robust vision models that learns semantic features from images.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/sign_language.png" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/sign_language"> Sign Language Translation</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            We implemented a convolutional neural network in PyTorch to recognize ASL characters, and achieved real-time translation
-                            with MediaPipe and OpenCV. Check out <a href="https://whuang288alex.github.io/sign_language/"> our website</a> for a more detailed introduction.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
 
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/video_feature_extraction.png" width="450"height="250"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/video_feature_extraction"> Video Feature Extraction</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            This directory contains the code to extract features from video datasets using mainstream vision models.
-                        </p>
-                    </div>
-                </div>
+      <div class="col-sm-9 col-right" data-spy="scroll" data-target="#navbar">
+        
+        <!-- About -->
+        <section id="section-abouts">
+          <h1 class="hello">Hello World!</h1>
+          <br>
+          <p> My name is Alex Huang, and I am a junior studying Computer Science at the University of Wisconsin-Madison. I am broadly interested in Machine Learning and Computer Vision. I am especially interested in Learning Based methods for Video Understanding and Vision-Language Learning. During my free time, I enjoy playing poker, Mahjong, and watching Netflix.</p>
+          <a target="_blank" rel="noopener noreferrer" href="./assets/Resume.pdf">
+            <button type="button" class="btn btn-primary">View My Resume</button>
+          </a>
+        </section>
+
+        <!-- Projects -->
+        <section id="section-projects">
+          <h2 class="section-title"> Projects</h2>
+          <div class="card-columns project-columns">
+            
+            
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/ModelResponse.jpg" height="200" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Model Response</h5>
+                <p class="card-text">I built this repository to help Psychology researchers interact with Large Language Models.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Knowledge-and-Concepts-Lab/model_response"
+                  class="btn btn-primary">Details</a>
+              </div>
             </div>
             
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/DevJobBoard.png" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/DevJobBoard"> DevJobBoard</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            I built this Cross-Platform mobile application with React Native and JSearch API. Created custom hooks to dynamically fetch developer job posts from platforms such as LinkedIn, Indeed, Glassdoor, etc
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/model_response.jpg" width="450" height = "400"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/Knowledge-and-Concepts-Lab/model_response"> Model Response</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            I built this repository to help Psychology researchers interact with Large Language Models.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/path_tracer.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/PathTracer">Path Tracer APK</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a project I developed as an Electrical Engineering intern at Zebra Technologies.The main goal of this app is to assist hardware engineers in testing the touch screens of Zebra Touch Computer Series. It is designed to detect ghost touch and line-breaks during the testing process.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/refocus.gif" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/Refocus">Refocus</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is an app that allows the user to refocus an image. The trick here is that it uses a stack of image with different focus as input instead of just one image. When a user chooses a scene point to be “refocused”, the app picks the “best focused” image from the focal stack, and displays the image.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/P_Scanner.gif" width="450" height="320"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/P-Scanner_public">P-Scanner</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a navigating device that is used in a warehouse scenario. It includes features such as but not limited to barcode scanning, route planning, navigating, and picture capturing. On top of the above mentioned core features, the biggest attraction of our device is that the user interface can be projected onto the floor, which allows the users to continue their work without occupying their hands.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/Minirel.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/Minirel">Minirel</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a group project in which we built a working single-user DBMS that can execute certain SQL queries. It includes 5 layers: the disk I/O layer (UNIX file system), buffer manager layer(using the clock algorithm), heap file layer, query processing layer, and the user interface.
-                        </p>
-                    </div>
-                </div>
+            <div class="card project-card">
+              <img class="card-img-top" src="assets/projects/Refocus.gif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Refocus</h5>
+                <p class="card-text">This is an app that allows the user to refocus an image.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/Refocus"
+                  class="btn btn-primary">Details</a>
+              </div>
             </div>
             
-            <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/image_stitcher.png" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/image_stitcher">Image Stitcher</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify"> 
-                            This is an app that stitches a collection of photos into one. We accomplished ths by first getting some interest points 
-                            using the SIFT algorithm, and then using RANSAC to get rid of the outliers. Finally, we calculated the homogrphy between 
-                            the images based on those SIFT matches, and used backward warping to stitch the images together.
-                        </p>
-                    </div>
-                </div>
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/DevJobBoard.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">DevJobBoard</h5>
+                <p class="card-text"> This Cross-Platform mobile application dynamically fetch developer job posts from platforms such as LinkedIn, Indeed, Glassdoor, etc</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/DevJobBoard"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+            
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/VisionRobustness.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Vision Robustness</h5>
+                <p class="card-text"> This project attempts to build vision models that can achieve out-of-domain generalization and increased robustness to adversarial attacks.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Knowledge-and-Concepts-Lab/vision_robustness"
+                  class="btn btn-primary">Details</a>
+              </div>
             </div>
 
-            <!-- <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/output_video.gif" width="450" height="300"/>
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/object_tracking">Object Tracking</a></h3>
-                        <br>
-                        <p style="color:black; max-width:95%" align  = "justify">
-                            This is a vision system that is able to detect the movement of an object. To accomplish this, we first determine an area of interest in an image, and search for the corresponding area in its next image using template matching.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
 
-            <!-- <div class="container pt-5">
-                <div class="row align-items-center">
-                    <div class="col-md">
-                        <img src="img/uwb.png" width="450" height="300"/>
-                        
-                    </div>
-                    <div class="col-md">
-                        <h3> <a href="https://github.com/whuang288alex/mock_uwb">UWB Simulator</a></h3>
-                        <br>
-                        <p>
-                            This project simulates the "three-point" method that is widely used to locate a tag's location. 
-                            This project aims to develop an algorithm that finds a best estimated point even if the measured distances lead to an obscure result.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/SignLanguage.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sign Language Translation</h5>
+                <p class="card-text"> We build this Computer Vision application that achieved real-time translation with Pytorch, MediaPipe, and OpenCV.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/sign_language"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
 
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/VideoFeatureExtraction.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Video Feature Extraction</h5>
+                <p class="card-text"> This directory contains the code to extract features from video datasets using mainstream vision models.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/video_feature_extraction"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/PathTracer.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Path Tracer</h5>
+                <p class="card-text"> The main goal of this Android app is to assist hardware engineers in testing the touch screens of Zebra Touch Computer Series.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/PathTracer"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+            
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/ImageStitcher.png" height="150" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Image Stitcher</h5>
+                <p class="card-text"> This is an application that stitches a collection of photos into one.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/image_stitcher"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+            
+          
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/PScanner.gif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">P-Scanner</h5>
+                <p class="card-text"> This is a navigating device whose user interface can be projected onto the floor and be navigated by hand gestures.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/P-Scanner_public"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+
+
+            <div class="card project-card">
+              <img class="card-img-top" src="./assets/projects/Minirel.png" height="150" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Minirel</h5>
+                <p class="card-text"> This is a group project in which we built a working single-user DBMS from scratch using C++.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/whuang288alex/Minirel"
+                  class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          
+          
+          </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="section-contact">
+          <h2 class="section-title">Contact Me</h2>
+          <p>
+            You can email me at
+            <a href="mailto: whuang288@wisc.edu">whuang288@wisc.edu</a>
+            or find me on
+            <a href="https://www.linkedin.com/in/alex-huang-a1a8a91b9/">LinkedIn</a>, or 
+            <a href="https://www.instagram.com/wei_chun1103">Instagram</a>
+          </p>
+        </section>
+        <div class="links">
+          <a target="_blank" href="https://github.com/whuang288alex/">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/alex-huang-a1a8a91b9/">
+            <i class="fa fa-linkedin fa-lg"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/wei_chun1103">
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
         </div>
+      </div>
     </div>
-    <!-- Projects End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  </div>
+  </div>
+  </div>
 </body>
 
 </html>
